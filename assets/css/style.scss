@@ -2,3 +2,47 @@
 ---
 
 @import 'jekyll-theme-hacker';
+
+// Custom styles for "Under the Shade"
+body {
+  background: $body-background url("../images/bkg.png") 0 0;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.95)), url("../images/bkg.png");
+}
+
+header {
+  border-bottom: 1px dashed $conifer;
+  h1 {
+    &:before {
+      content: "🌑 "; // Moon emoji instead of "./"
+      font-size: 24px;
+    }
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+                 0 0 5px rgba(124, 138, 212, 0.1),
+                 0 0 10px rgba(124, 138, 212, 0.1);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $conifer;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(124, 138, 212, 0.1),
+               0 0 10px rgba(124, 138, 212, 0.1);
+}
+
+a {
+  color: #a193e8;
+  text-shadow: 0 0 5px rgba(161, 147, 232, 0.5);
+}
+
+blockquote {
+  border-left: 1px dotted #7c8ad4;
+}
+
+pre {
+  color: #a193e8;
+}
+
+hr {
+  border-bottom: 1px dashed #7c8ad4;
+  color: #7c8ad4;
+}
